@@ -1,3 +1,53 @@
-div{
-    color: red;
+@font-face{
+    font-family: "pixelifysans";
+        src: 
+        url(fonts/pixelifysans-variablefont_wght-webfont.woff) format("woff"),
+        url(fonts/pixelifysans-variablefont_wght-webfont.woff2) format("woff2");
+    font-weight: normal;
+    font-size: normal;
+}   
+/* 
+blue 0C2D57
+orange FC6736
+pink FFB0B0
+white EFECEC
+ */
+
+:root{
+    font:
+     1em "pixelifysans",
+     monospace;
+}
+
+div {
+    display: flex;
+}
+
+div.container {
+    flex: auto;
+    align-items: center;
+}
+
+div.logo {
+    flex: auto;
+    min-width: 25vw;
+    min-height: 100vh;
+    background-image: url("media/fireBackground.png");
+    background-size: cover;
+}
+
+div.content{
+    flex: auto;
+    background-color: #EFECEC;
+    min-width: 75vw;
+    min-height: 100vh;
+    
+}
+
+div.form-container{
+    flex: auto;
+    align-items: baseline;
+    color: #0C2D57;
+    margin: 0px;
+    height: 10px;
 }
