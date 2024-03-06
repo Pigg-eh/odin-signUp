@@ -6,17 +6,32 @@
     font-weight: normal;
     font-size: normal;
 }   
+
+@font-face{
+    font-family: "rubikburned";
+        src: 
+        url(fonts/rubikburned-regular-webfont.woff) format("woff"),
+        url(fonts/rubikburned-regular-webfont.woff2) format("woff2");
+    font-weight: normal;
+    font-size: normal;
+}  
+
+:root{
+    font:
+     1em "pixelifysans",
+     monospace;
+
+
+    --header: 
+    1em "rubikburned",
+    monospace;
+
 /* 
 blue 0C2D57
 orange FC6736
 pink FFB0B0
 white EFECEC
  */
-
-:root{
-    font:
-     1em "pixelifysans",
-     monospace;
 }
 
 div {
@@ -29,7 +44,8 @@ div.container {
 }
 
 div.logo {
-    flex: auto;
+    /* flex: auto; */
+    display: flex;
     min-width: 25vw;
     min-height: 100vh;
     background-image: url("media/fireBackground.png");
@@ -37,17 +53,61 @@ div.logo {
 }
 
 div.content{
+    display: flex;
     flex: auto;
     background-color: #EFECEC;
-    min-width: 75vw;
-    min-height: 100vh;
-    
+}
+
+div.container{
+    display: flex;
+    flex: auto;
+    background-color: #EFECEC;
 }
 
 div.form-container{
+    display: flex;
     flex: auto;
-    align-items: baseline;
-    color: #0C2D57;
-    margin: 0px;
-    height: 10px;
+    flex-direction: column;
 }
+
+div.form-header{
+    font: var(--header);
+    height: 3em;
+    font-size:3em;
+    background-color: #FFB0B0;
+}
+div.field-container-main{
+    display: flex;
+    flex: auto;
+    height: 30vh;
+    background-color: #FFB0B0;
+}
+
+div.field-container{
+    display: flex;
+    flex: auto;
+    margin: auto;
+    width: 100px;
+}
+
+div.field-container>div{
+    flex: auto;
+    margin: auto;
+    flex-direction: column;
+    margin: 30px;
+}
+
+
+
+
+div.field{
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+footer {
+    height: 40vh;
+}   
