@@ -17,6 +17,7 @@
 }  
 
 :root{
+
     font:
      1em "pixelifysans",
      monospace;
@@ -31,6 +32,7 @@ orange #d0723b
 litebrown #744932
 brown #51382d
 gold #f4e292 
+black #fff
 */
 
 }
@@ -67,12 +69,25 @@ div.content{
     display: flex;
     flex: auto;
     background-color: #EFECEC;
+    min-height: 100vh
+}
+
+header{
+    flex: auto;
+    background-color: black;
+    height: 100%;
+}
+
+footer{
+    flex: 1 1 auto;
+    background-color: black;
+    height: 100%;
 }
 
 div.container{
     display: flex;
     flex: auto;
-    background-color: #EFECEC;
+    background-color: #51382d;
 }
 
 div.form-container{
@@ -81,18 +96,18 @@ div.form-container{
     flex-direction: column;
 }
 
-div.form-header{
-    color: #EFECEC;
+div.form-title{
+    color: #f4e292 ;
     font: var(--header);
     height: 3em;
     font-size:3em;
-    background-color: #FFB0B0;
+    background-color: #744932d2;
 }
 div.field-container-main{
     display: flex;
     flex: auto;
     height: 30vh;
-    background-color: #FFB0B0;
+    background-color: #744932d2;
 }
 
 div.field-container{
@@ -119,7 +134,3 @@ div.field{
     align-items: flex-start;
     margin: 30px;
 }
-
-footer {
-    height: 40vh;
-}   
