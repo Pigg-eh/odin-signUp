@@ -25,17 +25,18 @@
     --header: 
     1em "rubikburned",
     monospace;
+/*  
+litegrey #948c94
+orange #d0723b
+litebrown #744932
+brown #51382d
+gold #f4e292 
+*/
 
-/* 
-blue 0C2D57
-orange FC6736
-pink FFB0B0
-white EFECEC
- */
 }
 
-div {
-    display: flex;
+div{
+    
 }
 
 div.container {
@@ -45,11 +46,21 @@ div.container {
 
 div.logo {
     /* flex: auto; */
+    color: #f4e292;
     display: flex;
     min-width: 25vw;
     min-height: 100vh;
     background-image: url("media/fireBackground.png");
     background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img.odin-logo{
+    width: 50%;
+    height: 50%;
+    
 }
 
 div.content{
@@ -71,6 +82,7 @@ div.form-container{
 }
 
 div.form-header{
+    color: #EFECEC;
     font: var(--header);
     height: 3em;
     font-size:3em;
