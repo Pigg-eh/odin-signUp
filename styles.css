@@ -104,15 +104,22 @@ div.form-container{
     flex-direction: column;
     height: 30vh;
     background-color: #744932d2;
+    
 }
 
     form {
     display: flex;
-    flex-direction: column;
-    flex-flow: wrap;
+    justify-content: space-between;
     flex: 1 1 0;
+    height: 100%;
+    /* width: 50%; */
     }
 
+
+        div.field {
+        flex: auto;
+        flex-direction: column;
+        }
 
         /* div.field{
             flex: auto;
@@ -122,6 +129,14 @@ div.form-container{
             margin: 30px;
         } */
 
+        div.form-group{
+
+        }
+
+        form > * {
+
+        }
+        
         label {
             flex: auto;
         }
@@ -158,8 +173,9 @@ div.form-container{
 
   body {
     display: flex;
+    margin: 0px;
   }
 
   :root {
-    display: flex;
+    /* eeee */
   }
