@@ -37,17 +37,15 @@ black #fff
 
 }
 
-div{
-    
-}
 
 div.container {
+    display: flex;
     flex: auto;
     align-items: center;
 }
 
 div.logo {
-    /* flex: auto; */
+    flex: auto;
     color: #f4e292;
     display: flex;
     min-width: 25vw;
@@ -59,9 +57,10 @@ div.logo {
     flex-direction: column;
 }
 
+
 img.odin-logo{
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 25%;
     
 }
 
@@ -72,39 +71,30 @@ div.content{
     min-height: 100vh
 }
 
-header{
-    flex: auto;
-    background-color: black;
-    height: 100%;
-}
-
-footer{
-    flex: 1 1 auto;
-    background-color: black;
-    height: 100%;
-}
-
 div.container{
     display: flex;
     flex: auto;
     background-color: #51382d;
 }
 
-div.form-container{
+div#my-form{
     display: flex;
     flex: auto;
-    flex-direction: column;
+     flex-direction: column;
+    
 }
+
+
 
 div.form-title{
     color: #f4e292 ;
     font: var(--header);
-    height: 3em;
+    height: 10vh;
     font-size:3em;
     background-color: #744932d2;
 }
 div.field-container-main{
-    display: flex;
+    display: flex; /*maybe delete this */
     flex: auto;
     height: 30vh;
     background-color: #744932d2;
@@ -112,7 +102,7 @@ div.field-container-main{
 
 div.field-container{
     display: flex;
-    flex: auto;
+    flex: 1 1 0;
     margin: auto;
     width: 100px;
 }
@@ -121,10 +111,8 @@ div.field-container>div{
     flex: auto;
     margin: auto;
     flex-direction: column;
-    margin: 30px;
+    margin: 40px;
 }
-
-
 
 
 div.field{
@@ -134,3 +122,40 @@ div.field{
     align-items: flex-start;
     margin: 30px;
 }
+
+form {
+    display: table-row-group;
+     height: 100%;
+  }
+
+ header, 
+ footer{
+    color: #f4e292;
+    background-color: black;    
+    display: table-row;
+    height: 30vh;
+  }
+
+
+
+  div.field{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  body {
+    display: flex;
+  }
+
+  :root {
+    display: flex;
+  }
+  
+  div.content {
+    align-items: stretch;
+  }
