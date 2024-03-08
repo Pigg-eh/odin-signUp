@@ -24,7 +24,7 @@
 
 
     --header: 
-    1em "rubikburned",
+    30px "rubikburned",
     monospace;
 /*  
 litegrey #948c94
@@ -64,12 +64,7 @@ img.odin-logo{
     
 }
 
-div.content{
-    display: flex;
-    flex: auto;
-    background-color: #EFECEC;
-    min-height: 100vh
-}
+
 
 div.container{
     display: flex;
@@ -77,7 +72,7 @@ div.container{
     background-color: #51382d;
 }
 
-div#my-form{
+div.content{
     display: flex;
     flex: auto;
      flex-direction: column;
@@ -90,63 +85,76 @@ div.form-title{
     color: #f4e292 ;
     font: var(--header);
     height: 10vh;
-    font-size:3em;
     background-color: #744932d2;
 }
-div.field-container-main{
-    display: flex; /*maybe delete this */
-    flex: auto;
+
+
+
+
+
+div.content{
+    display: flex;
+    /* flex: auto; */
+    background-color: #EFECEC;
+    min-height: 100vh
+}
+
+div.form-container{
+    display: flex;
+    flex-direction: column;
     height: 30vh;
     background-color: #744932d2;
 }
 
-div.field-container{
-    display: flex;
-    flex: 1 1 0;
-    margin: auto;
-    width: 100px;
-}
-
-div.field-container>div{
-    flex: auto;
-    margin: auto;
-    flex-direction: column;
-    margin: 40px;
-}
-
-
-div.field{
-    flex: auto;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 30px;
-}
-
-form {
-    display: table-row-group;
-     height: 100%;
-  }
-
- header, 
- footer{
-    color: #f4e292;
-    background-color: black;    
-    display: table-row;
-    height: 30vh;
-  }
-
-
-
-  div.field{
+    form {
     display: flex;
     flex-direction: column;
-  }
-
-  form {
-    display: flex;
     flex-flow: wrap;
-  }
+    flex: 1 1 0;
+    }
+
+
+        /* div.field{
+            flex: auto;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            margin: 30px;
+        } */
+
+        label {
+            flex: auto;
+        }
+
+        input{
+            flex: 0 1 0;
+            width: 200px;
+            height: 10px;
+        }
+
+
+    header, 
+    footer{
+        color: #f4e292;
+        background-color: black;    
+        display: table-row;
+        height: 30vh;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;;
+    }
+
+        button {
+            width: 75px;
+        }
+
+        footer>* {
+            margin: 20px 40px;
+        }
+
 
   body {
     display: flex;
@@ -154,8 +162,4 @@ form {
 
   :root {
     display: flex;
-  }
-  
-  div.content {
-    align-items: stretch;
   }
