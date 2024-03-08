@@ -112,31 +112,34 @@ div.form-container{
     justify-content: space-between;
     flex: 1 1 0;
     height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
     /* width: 50%; */
     }
 
 
         div.field {
+        display: flex;
         flex: auto;
         flex-direction: column;
+        justify-content: space-evenly;
+        margin: 30px;
         }
 
         /* div.field{
             flex: auto;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+
+            
             align-items: flex-start;
-            margin: 30px;
+            
         } */
 
         div.form-group{
-
+            flex: auto;
+            
         }
 
-        form > * {
-
-        }
-        
         label {
             flex: auto;
         }
