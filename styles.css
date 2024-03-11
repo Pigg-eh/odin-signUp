@@ -103,7 +103,7 @@ div.container{
 p.form-title{
     color: orangered ;
     font: var(--header);
-    height: 0.5rem;
+    height: 10vh;
 }
 
 
