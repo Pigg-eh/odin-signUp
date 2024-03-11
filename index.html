@@ -18,44 +18,41 @@
             
             <div class="content">
                 <header> Heads </header>
-                <div class="form-title">Lorem ipsum dolor sit amet.</div>
+                <p class="form-title">Lorem ipsum dolor sit amet.</p>
 
                 
                 <div class="form-container">
                     <form action="post" id="my-form">
-                            <!-- maybe needs another parent -->
-                                <div class="form-group">
-                                    <div class="field">
-                                        <label for="firstname">Firstname</label>
-                                        <input type="text" id="firstname" name="firstname">
-                                    </div>
-                                    <div class="field">
-                                        <label for="lastname">lastname</label>
-                                        <input type="text" id="lastname" name="lastname">
-                                    </div>
-                                </div>
+                                <label class="field" for="firstname">Firstname
+                                     <input type="text" id="firstname" name="firstname">
+                                     <div class="error" class="error"></div>
+                                </label>
 
-                                <div class="form-group">
-                                    <div class="field">
-                                        <label for="email">email</label>
-                                        <input type="email" id="email" name="email">
-                                    </div>
-                                    <div class="field">
-                                        <label for="phone">phone</label>
-                                        <input type="tel" id="phone" name="phone">
-                                    </div>
-                                </div>
+                                <label class="field" for="lastname">lastname
+                                     <input type="text" id="lastname" name="lastname">
+                                     <div class="error" class="error"></div>
+                                </label>
 
-                                <div class="form-group">
-                                    <div class="field">
-                                        <label for="pass">pass</label>
-                                        <input type="password" id="pass" name="pass">
-                                    </div>
-                                    <div class="field">
-                                        <label for="confirm-pass">confirm-pass</label>
-                                        <input type="password" id="confirm-pass" name="confirm-pass">
-                                    </div>
-                                </div>
+                                <label class="field" for="email">email
+                                    <input type="email" id="email" name="email">
+                                    <div class="error" class="error"></div>
+                                </label>
+
+                                <label class="field" for="phone">phone
+                                    <input type="tel" id="phone" name="phone">
+                                    <div class="error" class="error"></div>
+                                </label>
+
+                                <label class="field" for="pass">pass
+                                    <input type="password" id="pass" name="pass">
+                                    <div class="error" class="error"></div>
+                                </label>
+                                
+                                <label class="field" for="confirm-pass">confirm pass
+                                    <input type="password" id="confirm-pass" name="confirm-pass">
+                                    <div class="error" class="error"></div>
+
+                                </label>
                     </form>
                 </div>
                 <footer>
