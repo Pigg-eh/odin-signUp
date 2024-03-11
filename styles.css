@@ -10,8 +10,8 @@
 @font-face{
     font-family: "rubikburned";
         src: 
-        url(fonts/rubikburned-regular-webfont.woff) format("woff"),
-        url(fonts/rubikburned-regular-webfont.woff2) format("woff2");
+        url(fonts/.woff2) format("woff"),
+        url(fonts/.woff2) format("woff2");
     font-weight: normal;
     font-size: normal;
 }  
@@ -66,6 +66,7 @@ div.container {
     /* display: flex; */
     flex: auto;
     align-items: center;
+    /* background-image: url("media/night.png"); */
 }
 
 div.logo {
@@ -74,7 +75,7 @@ div.logo {
     display: flex;
     max-width: 40vw;
     min-height: 100vh;
-    background-image: url("media/fireBackground.png");
+    background-image: url("media/night.png");
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -93,7 +94,7 @@ img.odin-logo{
 div.container{
     display: flex;
     flex: auto;
-    background-color: #51382d;
+    background-color: #19212c;
 }
 
 
@@ -144,9 +145,8 @@ div.content{
 
 
         header, 
-        footer{
-            /* color: #f4e292; */
-            background-color:rgba(49, 31, 10, 0.801);    
+        footer{ 
+            background-color:#000;   
             display: table-row;
             height: 30vh;
         }
