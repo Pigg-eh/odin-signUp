@@ -89,6 +89,12 @@ img.odin-logo{
     
 }
 
+div.kudos{
+    justify-self: flex-end;
+    align-self: flex-end;
+    color: rgba(128, 128, 128, 0.432);
+    text-shadow: #000;
+}
 
 
 div.container{
@@ -127,6 +133,7 @@ div.content{
     display: flex;
     flex-flow: row wrap;
     height: 30vh;
+    width: 75%;
     gap: 2rem;
     font-size: 1rem;
     }
