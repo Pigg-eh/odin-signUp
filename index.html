@@ -11,48 +11,49 @@
 
     <div class="container">
         <div class="logo">
-            <div class="odin-title">there is wordss</div>
+            <div class="odin-title">SIGN UP FORM</div>
             <img class="odin-logo" src="media/odin-lined.png" alt="" >
             <div class="kudos">Photo by Kaique Rocha on Pexels</div>
         </div>
             
             <div class="content">
-                <header> Heads </header>
-                <p class="form-title">Lorem ipsum dolor sit amet.</p>
+                <header>  
+                    <p>Heads</p>
+                </header>
 
-                
                 <div class="form-container">
+
+                     <p class="form-title">Lorem ipsum dolor sit amet.</p>
+                
                     <form action="post" id="my-form">
-                                <label class="field" for="firstname">Firstname
-                                     <input type="text" id="firstname" name="firstname">
-                                     <div class="error" class="error"></div>
-                                </label>
+                        
+                                    <label class="field" for="firstname">FIRST NAME
+                                         <input type="text" id="firstname" name="firstname" minlength="5" maxlength="20" placeholder="John">
+                                         <!-- <div class="error" class="error"></div> -->
+                                    </label>
+                                    <label class="field" for="lastname">LAST NAME
+                                         <input type="text" id="lastname" name="lastname" minlength="5" maxlength="20" required placeholder="Smith">
+                                         <!-- <div class="error" class="error"></div> -->
+                                    </label>
+                                    <label class="field" for="email">E-MAIL
+                                        <input type="email" id="email" name="email" required placeholder="johnsmith@example.com">
+                                        <!-- <div class="error" class="error"></div> -->
+                                    </label>
+                                    <label class="field" for="phone">PHONE
+                                        <input type="tel" id="phone" name="phone" minlength="10" maxlength="10" required placeholder="9832475667">
+                                        <!-- <div class="error" class="error"></div> -->
+                                    </label>
+                                    <label class="field" for="pass">PASSWORD
+                                        <input type="password" id="pass" name="pass" minlength="7" required placeholder="min length: 7">
+                                        <!-- <div class="error" class="error"></div> -->
+                                    </label>
+                                    
+                                    <label class="field" for="confirm-pass">CONFIRM PASSWORD
+                                        <input type="password" id="confirm-pass" name="confirm-pass" required placeholder="min length: 7">
+                                        <!-- <div class="error" class="error"></div> -->
+                                    </label>
+                            
 
-                                <label class="field" for="lastname">lastname
-                                     <input type="text" id="lastname" name="lastname">
-                                     <div class="error" class="error"></div>
-                                </label>
-
-                                <label class="field" for="email">email
-                                    <input type="email" id="email" name="email">
-                                    <div class="error" class="error"></div>
-                                </label>
-
-                                <label class="field" for="phone">phone
-                                    <input type="tel" id="phone" name="phone">
-                                    <div class="error" class="error"></div>
-                                </label>
-
-                                <label class="field" for="pass">pass
-                                    <input type="password" id="pass" name="pass">
-                                    <div class="error" class="error"></div>
-                                </label>
-                                
-                                <label class="field" for="confirm-pass">confirm pass
-                                    <input type="password" id="confirm-pass" name="confirm-pass">
-                                    <div class="error" class="error"></div>
-
-                                </label>
                     </form>
                 </div>
                 <footer>

@@ -7,14 +7,7 @@
     font-size: normal;
 }   
 
-@font-face{
-    font-family: "rubikburned";
-        src: 
-        url(fonts/.woff2) format("woff"),
-        url(fonts/.woff2) format("woff2");
-    font-weight: normal;
-    font-size: normal;
-}  
+
 
 :root{
 
@@ -27,20 +20,7 @@
 
 
     --header: 
-    2rem "rubikburned",
-    monospace;
-/*  
-litegrey #948c94
-orange #d0723b    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-litebrown #744932
-brown #51382d
-gold #f4e292 
-black #fff
-*/
+    2rem monospace;
 
 }
 
@@ -53,40 +33,32 @@ body {
     overflow-x: hidden;
 }
 
-div {
-    display: block;
-}
-
-body {
-    display: block;
-} 
-/* check top two after */
 
 div.container {
-    /* display: flex; */
     flex: auto;
     align-items: center;
-    /* background-image: url("media/night.png"); */
 }
 
 div.logo {
     flex: auto;
-    /* color: #f4e292; */
     display: flex;
     max-width: 40vw;
     min-height: 100vh;
     background-image: url("media/night.png");
     background-size: cover;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;    
     flex-direction: column;
 }
 
+div.odin-title{
+    margin-top: 5px;
+    font: var(--header);
+}
 
 img.odin-logo{
-    width: 25%;
-    height: 25%;
-    
+    height: 15vh;
+    margin-bottom: 35%;
 }
 
 div.kudos{
@@ -109,7 +81,6 @@ div.container{
 p.form-title{
     color: orangered ;
     font: var(--header);
-    height: 10vh;
 }
 
 
@@ -118,48 +89,35 @@ div.content{
     flex: auto;
     flex-direction: column;
     background-color: gray;
-}
-
-
-div.content{
-    display: flex;
-    /* flex: auto; */
     background-color:rgba(49, 31, 10, 0.201);    
     height: 100vh;
     width: 60vh;
 }
 
+
+div.form-container {
+    height: 40vh;
+}
+
     form {
-    display: flex;
-    flex-flow: row wrap;
-    height: 30vh;
-    width: 75%;
-    gap: 2rem;
-    font-size: 1rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;  
+        height: 70%;
+        width: 50%;
     }
 
-
         label.field {
-        position: relative;
-        justify-content: space-evenly;   
-        width: 10rem;
-        margin-bottom: 15px;
+        position: relative; 
+        width: 10em;
+        margin: 1em;
         }
-
-            input{
-                margin-top: 3px;
-            }
-
 
         header, 
         footer{ 
             background-color:#000;   
-            display: table-row;
-            height: 30vh;
-        }
-
-        footer {
             display: flex;
+            height: 30vh;
             flex-direction: column;
             justify-content: space-between;;
         }
@@ -167,7 +125,7 @@ div.content{
             button {
                 width:min-content;
             }
-
+            header>*,
             footer>* {
                 margin: 20px 40px;
             }
@@ -175,9 +133,26 @@ div.content{
 
   body {
     display: flex;
-    margin: 0px;
+    /* margin: 0px; */
   }
 
-  :root {
-    /* eeee */
+
+  input {
+    border: none;
+    outline: 2px solid teal ;
+    border-radius: 5px;
+  }
+
+  input:user-valid{
+    border: none;
+    outline: 2px solid green;
+    border-radius: 5px;
+    accent-color: gold;
+  }
+
+  input:user-invalid {
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+    accent-color: gold;
   }
